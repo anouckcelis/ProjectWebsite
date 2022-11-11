@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Contact</title>
+</head>
+<body>
+  <nav>
+    <div>
+      <h1>Anouck Celis</h1>
+    </div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="cv.html">CV</a>
+      <a href="ervaring.html">Ervaring</a>
+      <a href="hobbysinteresses.html">Hobby&#39;s &#38; Interesses</a>
+      <a href="mijnpassie.html">Mijn passie</a>
+      <a href="#">Contact</a>
+      <a href="extra.html">Extra</a>
+    </div>
+  </nav>
+  <header>
+    <h1>Contact</h1>
+    <h2>Hoe kan je me bereiken&quest;</h2>
+    <hr>        
+  </header>
+  <main>  
+    <p><span class="material-icons">phone</span> Telefoonnummer: 0470325127 </p>
+    <p><span class="material-icons">mail</span> e-mailadres: <a href="mailto:anouck.celis@gmail.com" id="link">anouck.celis&#64;gmail.com</a></p>
+    <p><span class="material-icons">mail</span> e-mailadres: <a href="mailto:r0945902@student.thomasmore.be" id="link">r0945902&#64;student.thomasmore.be</a></p>
+    <div>
+      <h2>Vul het formulier in</h2>
+      <hr>
+    </div>
+    <form action="https://tm-statweb.be/sendmail.php" method="post">
+      <div>
+        <input type="text" name="voornaam" id="voornaam" placeholder="uw voornaam">
+      </div>
+      <div>
+        <input type="text" name="familienaam" id="familienaam" placeholder="uw familienaam">
+      </div>
+      <div>
+        <input type="email" name="emailadres" id="emailadres" placeholder="uw e-mailadres">
+      </div>
+      <div>
+        <textarea name="inhoudmail" id="inhoudmail" placeholder="Typ hier de vraag of reactie die u heeft voor mij."></textarea>
+      </div>
+      <input type="hidden" name="studentemail" value="r0945902@student.thomasmore.be">
+      <input type="submit" value="Versturen">
+    </form> 
+  </main> 
+</body>
+</html>
