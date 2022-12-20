@@ -1,0 +1,518 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+  --lightblue:  #5BBFC8;
+  --darkblue: #2B5182;
+  --white: #FCF8F7;
+  --black: #17080C;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: var(--white);
+    min-height: 100%;
+    margin: 0; 
+    padding: 0;
+}
+
+/* algemene opmaak van elementen die telkens terugkomen */
+img {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--black);
+}
+
+p {
+    font-size: 17px;
+    text-align: justify;
+}
+
+a {
+    color: var(--darkblue);
+}
+
+/* algemene indeling met grid */
+.grid {
+    display: grid;
+    grid-template-areas:
+      'gmenu gheader'
+      'gmenu gmain'
+      'gmenu gfooter';
+    grid-template-columns: 20% 80%;
+}
+
+.grid > .grid-header {
+    grid-area: gheader;
+    padding: 0px 0px 0px 15px;
+    margin: 10px 10px 10px 0px;
+}
+
+.grid > .grid-menu {
+    grid-area: gmenu;
+    background: var(--darkblue);
+    height: 100%;
+    width: 20%;
+    margin: 0px;
+    position: fixed;
+}
+
+
+.grid > .grid-main {
+    grid-area: gmain;
+    padding: 0px 0px 0px 15px;
+    margin: 10px 20px 10px 0px;
+}
+
+.grid > .grid-footer {
+    grid-area: gfooter;
+    padding: 0px 0px 0px 15px;
+    margin: 5px;
+}
+
+
+/* lijn */
+hr {
+    width: 150px;
+    border: 5px solid var(--lightblue);
+    border-radius: 3px;
+    padding: 0px;
+    margin: 0px 0px 15px 0px;
+}
+
+/* navigatiebalk aan zijkant -- grid-menu */
+.naam {
+    font-size: 40px;
+    color: var(--lightblue);
+    text-align: center;
+    font-weight: bold;
+    padding: 50px 16px 20px 16px;
+    margin-bottom: 20px;
+}
+
+
+.navlink {
+    display: block;
+    padding: 16px 16px;
+    text-decoration: none;
+    color: var(--white);
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer; 
+}
+
+.navlink:hover {
+    color: var(--darkblue);
+    background-color:var(--white);
+    font-weight: bold;
+}
+
+.navitem {
+    padding: 14px 16px;
+    width: auto;
+    display: block;
+}
+
+a.navitem.navlink {
+    text-align: left;
+    font-size: 22px;
+    width: 100%;
+}
+
+/* indexpagina - home */
+.fotomezelf {
+    height: 375px;
+    width: 275px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+.quote {
+    height: 150px;
+    width: 550px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* cv */
+.cvafbeelding {
+    height: 650px;
+    width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.cvdownloadtekst {
+    text-align: center;
+}
+
+/* ervaring */
+.afbeeldingervaring {
+    float: left;
+    height: 160px;
+    margin: 0px 10px 0px 0px;
+}
+
+.tekstervaring > p {
+    margin: 0px;
+}
+
+/* hobbyinteresses */
+    /* algemeen */ 
+.afbeeldingenhobbyintresses {
+    float: left;
+    height: 175px;
+}
+
+.teksthobbyintresses > p {
+    font-size: 16px;
+}
+
+    /* Country Line Dance */
+.cowboybotten, .logo {
+    margin: 0px 4px 2px 0px;
+    height: 150px;
+    width: 200px;
+}
+
+
+.tekstcountry {
+    margin: 5px 0px 32px 0px;
+}
+
+    /* Fietsen */
+.fietsenik {
+    margin: 0px 4px 10px 0px;
+}
+
+.tekstfietsenik {
+    margin: 72px 0px 78px 0px; 
+}
+
+    /* fotografie en bewerking */
+.belgaansetijger, .bloemetjes {
+    margin: 0px 4px 2px 0px;
+    height: 200px;
+}
+
+.tekstfotografiebewerking {
+    margin: 5px 0px 40px 0px;
+}
+
+    /* muziek */    
+.muziek {
+    margin: 0px 4px 10px 0px;
+}
+
+.tekstmuziek {
+    margin-bottom: 10px; 
+}
+
+/* Mijn passie - Dinseyland Parijs */
+.afbeeldingenmijnpassie {
+    float: left;
+    height: 300px;
+    margin-right: 20px;
+}
+
+/* formulier op contactpagina */
+input[type=text], input[type=email], textarea, select {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid var(--lightblue);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    height: 65px;
+   
+}
+  
+input[type=submit] {
+    width: 100%;
+    background-color: var(--lightblue);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: var(--darkblue);
+}
+  
+.omkadering {
+    border-radius: 4px;
+    background-color: #e1e1e1;
+    padding: 20px;
+}
+
+/* Extra */
+.linkicoontjes {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* footer */
+.tekstfooter {
+    font-weight: bold;
+    text-align: end;
+    font-size: 20px;
+}
+
+/* responsive voor webpagina */
+@media only screen and (min-width: 990px) and (max-width: 1300px) {
+    body {
+        font-size: 100%;
+    }
+
+    .grid > .grid-menu {
+        width: 20%;
+    }
+
+    /* navigatiebalk aan zijkant */
+    .naam {
+        font-size: 30px;
+        margin-bottom: 70px;
+    }
+
+    a.navitem.navlink {
+        font-size: 21px;
+    }
+
+    /* indexpagina - home */
+    .fotomezelf {
+        height: 275px;
+        width: 200px;
+    }
+
+    .quote {
+        height: 150px;
+        width: 440px;
+    }
+
+    .afbeeldingervaring {
+        height: 150px;
+    }
+
+    /* hobbyinteresses */
+    .tekstfietsenik {
+        margin-top: 65px;
+        margin-bottom: 70px; 
+    }
+
+    .tekstcountry {
+        margin-bottom: 60px;
+    }
+
+    .tekstmuziek {
+        margin-top: 0;
+        margin-bottom: 10px; 
+    }
+
+    /* Mijn passie - Dinseyland Parijs */
+    .afbeeldingenmijnpassie {
+        height: 300px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 990px) {
+    .grid > .grid-menu {
+        width: 20%;
+    }
+
+    /* navigatiebalk aan zijkant -- grid-menu */
+    .naam {
+        font-size: 15px;  
+        margin-bottom: 160px;
+    }
+
+    a.navitem.navlink {
+        font-size: 18px;
+    }
+
+    /* indexpagina - home */
+    .fotomezelf {
+        height: 275px;
+        width: 200px;
+    }
+
+    .quote {
+        height: 100px;
+        width: 350px;
+    }
+
+    /* cv */
+    .cvafbeelding {
+        height: 450px;
+        width: 300px;
+    }
+
+    /* hobbyinteresses */
+    .tekstcountry {
+        position: relative;
+        margin-top: 175px;
+    }
+
+    .tekstfietsenik {
+        margin-top: 0;
+        margin-bottom: 80px; 
+    }
+
+    .tekstfotografiebewerking {
+        position: relative;
+        margin-top: 230px;
+    }
+
+    .bloemetjes {
+        position: absolute;
+    }
+
+    .cowboybotten, .logo {
+        height: 140px;
+        width: 190px;
+    }
+
+    .logo {
+        position: absolute;
+    }
+
+    .muziek {
+        height: 150px;
+        width: 200px;
+        position: absolute;
+    }
+
+    .tekstmuziek {
+        margin-top: 0;
+        margin-bottom: 10px; 
+        position: relative;
+        margin-top: 175px;
+    }
+    
+    /* Mijn passie - Dinseyland Parijs */
+    .afbeeldingenmijnpassie {
+        height: 200px;
+        margin-right: 8px;
+        margin-bottom: 6px;
+    }
+}
+
+/* Responsive smartphone */
+@media only screen and (max-device-width: 480px ) {
+    .grid > .grid-menu {
+        width: 20%;
+    }
+
+    .titel {
+        font-size: 22px;
+    }
+
+    .ondertitel {
+        font-size: 19px;
+    }
+
+    /* navigatiebalk aan zijkant -- grid-menu */
+    .naam {
+        font-size: 12px;
+        padding: 50px 2px 120px 2px;
+    }
+
+    a.navitem.navlink {
+        font-size: 11px;
+    }
+
+    /* indexpagina - home */
+    .fotomezelf {
+        height: 275px;
+        width: 200px;
+    }
+
+    figure {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .quote {
+        height: 80px;
+        width: 250px;
+    }
+
+    /* CV */
+    .cvafbeelding {
+        height: 450px;
+        width: 300px;
+    }
+
+    /* Ervaring */
+    .afbeeldingervaring {
+        height: 100px;
+    }
+
+    /* hobbyinteresses */
+    .cowboybotten, .logo {
+        height: 100px;
+        width: 140px;
+    }
+
+    .logo {
+        position: absolute;
+    }
+
+    .tekstcountry {
+        position: relative;
+        margin-top: 120px;
+    }
+
+    .fietsenik {
+        margin-right: 4px;
+        margin-bottom: 0;
+    }
+
+    .tekstfietsenik {
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    .tekstfotografiebewerking {
+        position: relative;
+        margin-top: 210px;
+    }
+
+    .bloemetjes, .belgaansetijger {
+        height: 185px;
+    }
+
+    .bloemetjes {
+        position: absolute;
+    }
+
+    /* Mijn passie - Dinseyland Parijs */
+    .afbeeldingenmijnpassie {
+        height: 150px;
+        margin-right: 8px;
+        margin-bottom: 6px;
+    }
+
+    /* Contact */
+    .uitlijningtekst {
+        text-align: left;
+    }
+}

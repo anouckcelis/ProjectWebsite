@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contact</title>
+</head>
+<body class="grid">
+  <nav class="grid-menu">
+    <div class="naam">
+      <h1>Anouck Celis</h1>
+    </div>
+    <div>
+      <a href="index.html" class="navitem navlink">Home</a>
+      <a href="cv.html" class="navitem navlink">CV</a>
+      <a href="ervaring.html" class="navitem navlink">Ervaring</a>
+      <a href="hobbysinteresses.html" class="navitem navlink">Interesses</a>
+      <a href="mijnpassie.html" class="navitem navlink">Passie</a>
+      <a href="#" class="navitem navlink">Contact</a>
+      <a href="extra.html" class="navitem navlink">Extra</a>
+    </div>
+  </nav>
+  <header class="grid-header">
+    <h1 class="titel">Contact</h1>
+    <h2 class="ondertitel">Hoe kan je me bereiken&quest;</h2>
+    <hr>        
+  </header>
+  <main class="grid-main">  
+    <p class="uitlijningtekst"><i class="bi bi-telephone-fill"></i> Telefoonnummer: 0470325127 </p>
+    <p class="uitlijningtekst"><i class="bi bi-envelope-at-fill"></i> Mailadres: <a href="mailto:anouck.celis@gmail.com" id="link">anouck.celis&#64;gmail.com</a></p>
+    <p class="uitlijningtekst"><i class="bi bi-envelope-at-fill"></i> Mailadres: <a href="mailto:r0945902@student.thomasmore.be" id="link">r0945902&#64;student.thomasmore.be</a></p>
+    <div>
+      <h2>Vul het formulier in</h2>
+      <hr>
+    </div>
+    <form class="omkadering"  action="https://tm-statweb.be/sendmail.php" method="post">
+      <div>
+        <input type="text" name="voornaam" id="voornaam" placeholder="uw voornaam" required>
+      </div>
+      <div>
+        <input type="text" name="familienaam" id="familienaam" placeholder="uw familienaam" required>
+      </div>
+      <div>
+        <input type="email" name="emailadres" id="emailadres" placeholder="uw e-mailadres">
+      </div>
+      <div>
+        <textarea name="inhoudmail" id="inhoudmail" placeholder="Typ hier de vraag of reactie die u heeft voor mij."></textarea>
+      </div>
+      <input type="hidden" name="studentemail" value="r0945902@student.thomasmore.be">
+      <input type="submit" value="Versturen">
+    </form> 
+  </main> 
+  <footer class="grid-footer">
+    <p class="tekstfooter">&copy; Anouck Celis</p>
+</footer>
+</body>
+</html>
