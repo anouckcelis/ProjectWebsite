@@ -140,16 +140,17 @@ a.navitem.navlink {
 }
 
 /* cv */
-.cvafbeelding {
-    height: 650px;
-    width: 450px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto
+.cvdownloadtekst {
+    text-align: left;
 }
 
-.cvdownloadtekst {
-    text-align: center;
+.datum {
+    font-weight: bold;
+}
+
+.carousel {
+    display: none;
+    width: 500px;
 }
 
 /* ervaring */
@@ -360,9 +361,8 @@ input[type=submit]:hover {
     }
 
     /* cv */
-    .cvafbeelding {
-        height: 450px;
-        width: 300px;
+    .carousel{
+        width: 380px;
     }
 
     /* hobbyinteresses */
@@ -455,10 +455,9 @@ input[type=submit]:hover {
         width: 250px;
     }
 
-    /* CV */
-    .cvafbeelding {
-        height: 450px;
-        width: 300px;
+    /* cv */
+    .carousel{
+        width: 280px;
     }
 
     /* Ervaring */

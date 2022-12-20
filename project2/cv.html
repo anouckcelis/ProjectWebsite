@@ -27,11 +27,107 @@
     <hr>
   </header>
   <main class="grid-main">
-    <img class="cvafbeelding" src="../afbeeldingen/cv/CV_Anouck_Celis.png" alt="CV Anouck Celis">
-    <p class="cvdownloadtekst">Download mijn cv in pdf formaat <a href="../bestanden/CV_Anouck_Celis.pdf" download >hier</a>.</p>  
+    <p class="cvdownloadtekst">Als je mijn cv in pdf-formaat wil bekijken, download <a href="../bestanden/CV_Anouck_Celis.pdf" download >hier</a>.</p>
+    <h2>Opleidingen <i class="bi bi-journals"></i></h2>
+    <p class="datum">2014 &ndash; 2016</p>
+    <ul>
+      <li>Sint-Ursula Middenschool, Lier, België</li>
+      <ul>
+        <li>Moderne wetenschappen met wiskunde en talen</li>
+      </ul>
+    </ul>
+    <p class="datum">2016 &ndash; 2019</p>
+    <ul>
+      <li>Sint-Ursula Lyceum, Lier, België</li>
+      <ul>
+        <li>Wetenschappen</li>
+      </ul>
+    </ul>
+    <p class="datum">2019 &ndash; 2021</p>
+    <ul>
+      <li>Sint-Ursula Instituut, Lier, België</li>
+      <ul>
+        <li>IT en Netwerken</li>
+      </ul>
+    </ul>
+    <p class="datum">2011 &ndash; 2022</p>
+    <ul>
+      <li>Karel de Grote Hogeschool, Antwerpen, België</li>
+      <ul>
+        <li>Bachelor Toegepaste Informatica</li>
+      </ul>
+    </ul>
+    <p class="datum">2022 &ndash; heden</p>
+    <ul>
+      <li>Thomas More Hogeschool, Lier, België</li>
+      <ul>
+        <li>Graduaat Programmeren</li>
+      </ul>
+    </ul>
+    <h2>Werkervaring <i class="bi bi-briefcase-fill"></i></h2>
+    <p class="datum">2018 &ndash; heden</p>
+    <ul>
+      <li>Studenenjob</li>
+      <ul>
+        <li>Retail Partners Colruyt Group, Mechelen, België</li>
+        <ul>
+          <li>Samenwerken met anderen</li>
+          <li>Facility</li>
+          <li>Kantine</li>
+          <ul>
+            <li>Kassa</li>
+            <li>Mensen bedienen</li>
+            <li>Afbakken van broodjes en koffiekoeken</li>
+          </ul>
+        </ul>
+      </ul>
+    </ul>
+    <h2>Talenkennis <i class="bi bi-translate"></i></h2>
+    <ul>
+      <li>Nederlands <i class="bi bi-arrow-right"></i> moedertaal</li>
+      <li>Frans</li>
+      <li>Engels <i class="bi bi-arrow-right"></i> niveau B1 &ndash; Test Erasmus</li>
+      <li>Duits</li>
+    </ul>
+    <h2>Persoonlijke vaardigheden <i class="bi bi-person-badge"></i></h2>
+    <ul>
+      <li>Sociaal</li>
+      <li>Enthousiast</li>
+      <li>Programmeren</li>
+      <li>Websdesign</li>
+      <li>Werken met computers, tablets en smartphones</li>
+      <li>Hulpvaardig</li>
+      <li>Creatief <i class="bi bi-arrow-right"></i> Oog voor detail</li>
+      <li>Initiatief nemen</li>
+      <li>Flexibel</li>
+      <li>Ordelijk</li>
+    </ul>
+    <h2>Informaticavaardigheden <i class="bi bi-laptop"></i></h2>
+    <div>
+      <img class="carousel" src="../afbeeldingen/cv/HtmlCssBootstrap.jpg" alt="logo's HTML CSS Bootstrap voor informaticaervaring">
+      <img class="carousel" src="../afbeeldingen/cv/JavaCPython.jpg" alt="logo's Java C Python voor informaticaervaring">
+      <img class="carousel" src="../afbeeldingen/cv/JavascriptPHPOffice.jpg" alt="logo's JavaScript PHP Office voor informaticaervaring">
+    </div>
   </main>
   <footer class="grid-footer">
     <p class="tekstfooter">&copy; Anouck Celis</p>
 </footer>
 </body>
 </html>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("carousel");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000);
+}
+</script>
